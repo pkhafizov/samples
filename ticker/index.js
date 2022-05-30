@@ -22,8 +22,8 @@ const ticker = (num,count,cb) => {
 
 ticker(1000,0,(err, count) => {
     if (err) {
-        console.log('error')
-    } else
+        return console.log('error')
+    }
     console.log(`done ${count}`)
 }).on('tick',(num) => {
     console.log(num)
